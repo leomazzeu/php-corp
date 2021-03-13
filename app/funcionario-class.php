@@ -33,4 +33,20 @@ class Funcionario {
     public function setNome(String $nome) {
         $this->nome = $nome;
     }
+
+    public function getCPF() {
+        return $this->cpf;
+    }
+
+    public function setCPF(String $cpf) {
+        $this->cpf = $cpf;
+    }
+
+    public function getSalario() {
+        return $this->salario;
+    }
+
+    public function setSalario(Float $salario) {
+        $this->salario = $salario;
+    }
 }

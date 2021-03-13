@@ -1,5 +1,5 @@
 <?php
-require "app/application.class";
+require "app/application-class.php";
 
 $app = new Application();
 $operadores = $app->getListaOperadores();

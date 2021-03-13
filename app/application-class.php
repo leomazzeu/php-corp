@@ -1,5 +1,5 @@
 <?php
-require "Operador.class";
+require "operador-class.php";
 
 class Application {
   private $listaGerentes = [];
@@ -9,6 +9,9 @@ class Application {
   public function __construct() {
     $opTeste = new Operador("0001", "João da Silva", "00000000001", 2000.00, "002");
     $this->addOperador($opTeste);
+
+    $opTeste2 = new Operador("0401", "Joe Die", "00000000001", 2000.00, "002");
+    $this->addOperador($opTeste2);
   }
 
   public function getAppName() {
@@ -29,5 +32,17 @@ class Application {
 
   public function getListaOperadores() {
     return $this->listaOperadores;
+  }
+
+  public function mostraTelaCadastro() {
+
+  }
+
+  public function mostraTelaConsulta() {
+
+  }
+
+  public function mostraTelaHome() {
+    
   }
 }

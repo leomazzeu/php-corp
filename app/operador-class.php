@@ -1,5 +1,5 @@
 <?php
-require "Funcionario.class";
+require "funcionario-class.php";
 
 class Operador extends Funcionario {
     private $codFuncao;
